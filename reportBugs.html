@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem reporters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Enlace a Google Fonts -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  
+    <video autoplay muted loop> <!--Usamos un video como fondo -->
+        <source src="recursos/orange.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="formulario-contacto contenedor"> 
+        <div class="informacion-contacto">
+            <h3>Problem reporter</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Report the bug</p>
+            <p><i class="fas fa-envelope"></i>Write your report here and help us to improve the game</p>
+            <p><i class="fas fa-phone-alt"></i>Questionary:</p>
+        </div>
+        <form class="formulario" id="formulario" action="https://formspree.io/f/mrgnoryw" method="POST"> <!-- Usammos la herramienta para hacer un formulario -->
+            <div class="input-formulario">
+                <label for="nombre">User name: </label>
+                <input type="text" placeholder="Insert your user name here..." id="nombre" name="nombre" required> <!-- encerramos cada div para centrar el texto con la informacion que el usuario va a poner -->
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Context</label>
+                <input type="text" placeholder="Context about the bug" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Email adress</label>
+                <input type="email" placeholder="example@gmail.com" id="correo" name="correo" required>
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Phone number</label>
+                <input type="tel" placeholder="### --- -- --" id="telefono" name="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Report</label>
+                <textarea id="mensaje" placeholder="Tell us about the bug or problem:  " name="mensaje"></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar"> <!-- Boleto para que la gente envie informacion-->
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
